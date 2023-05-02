@@ -1,3 +1,32 @@
+/* 
+OMNIFOOD DESIGN SETTINGS : 
+1. TYPOGRAPHY 
+    - FONT SIZES (in px) : 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 48 / 52 / 62 / 74 / 86 / 98
+    - FONT WEIGHT : 
+        default : 400
+    - LINE HEIGHTS : 
+        default : 1
+
+2. COLORS 
+    - PRIMARY COLOR : #e67e22
+    - TINTS : 
+    - SHADES : 
+    - ACCENTS : 
+    - GREYS : #555
+
+3. IMAGES 
+    - downloaded from unsplash and for customer faces we are using uifaces website. 
+
+4. SHADOWS 
+    - 
+
+5. BORDER RADIUS 
+    - 
+
+6. WHITESPACE 
+    - SPACING SYSTEM : 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
 /* css reset */
 *,
 *::before,
