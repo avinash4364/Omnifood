@@ -23,7 +23,7 @@ OMNIFOOD DESIGN SETTINGS :
     - 
 
 5. BORDER RADIUS 
-    - 9px(default) 
+    - 9px(default) , 11px
 
 6. WHITESPACE 
     - SPACING SYSTEM : 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -135,12 +135,21 @@ body {
   margin-right: 1.6rem !important;
 }
 
+.mb-medium {
+  margin-bottom: 4.8rem !important;
+}
+
 /* a centered generic container */
 .container {
   /* 1140px and 1200px are generally used for container width in modern websites */
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
+}
+
+/* to center text */
+.center-text {
+  text-align: center;
 }
 
 /* reusable grid */
@@ -165,4 +174,29 @@ body {
 
 .grid-4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* reusable links */
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #e67e22;
+  display: inline-block;
+  padding-bottom: 2px;
+
+  /* generally we remove the text decoration (underline) on the links but if we want to add a underline we can use border-bottom */
+  /* here the currentcolor keyword represents the value of the element's color property */
+  border-bottom: 1px solid currentColor;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  /* removing the border when we hover over it */
+  border-bottom: 1px solid transparent;
 }
