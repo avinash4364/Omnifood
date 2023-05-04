@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>OmniFood</title>
   </head>
@@ -11,6 +17,7 @@
     <!-- hero section -->
 
     <section class="section-hero">
+      <!-- made one more container inside the section-hero container because we need to give the hero container  max-width which will adjust according to its parent container and the section-hero container a background color-->
       <div class="hero">
         <div class="hero-text">
           <h1 class="heading-primary">
@@ -21,11 +28,17 @@
             healthy again. Tailored to your personal tastes and nutritional
             needs. We have delivered 250,000+ meals last year!
           </p>
-          <a href="#" class="btn">Start eating Well</a>
-          <a href="#" class="btn">Learn more &darr;</a>
+
+          <!-- added a helper class for small margin right -->
+          <a href="#" class="btn btn--full mr-small">Start eating well</a>
+          <a href="#" class="btn btn--outline">Learn more &darr;</a>
         </div>
-        <div class="hero-image">
-          <img src="images/hero.png" />
+        <div class="hero-image-box">
+          <img
+            src="images/hero.png"
+            class="hero-img"
+            alt="woman enjoying food, meals in storage container and food bowls in a container"
+          />
         </div>
       </div>
     </section>
