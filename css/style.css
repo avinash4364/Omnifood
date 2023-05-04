@@ -325,3 +325,69 @@
   text-align: center;
   font-size: 1.8rem;
 }
+
+/* ******* */
+/** TESTIMONIALS SECTION */
+/* ****** */
+
+.section-testimonials {
+  background-color: #fdf2e9;
+  display: grid;
+  /* fr values when we think in terms of percentages : 55+45 = 100 */
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  /* color: #777; */
+  /* maintaining the contrast ratio between background-color and font color */
+  color: #6f6f6f;
+  font-size: 1.6rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  /* exact same spacing as the gap to create a more visual hierarchy */
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  /* this will make the image appear that it is moving towards the user */
+  overflow: hidden;
+}
+
+.gallery-item img {
+  /* to remove the default spacing between images as images are inline-block by default */
+  width: 100%;
+  display: block;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
