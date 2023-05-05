@@ -14,7 +14,7 @@ OMNIFOOD DESIGN SETTINGS :
     - TINTS : #fdf2e9 , #fae5d3, #eb984e
     - SHADES : #cf711f, #45260a
     - ACCENTS : 
-    - GREYS : #555 , #333 , #ddd , #888 , #6f6f6f(lightest grey allowed on #fdf2e9)
+    - GREYS : #555 , #333 , #ddd , #888 , #6f6f6f(lightest grey allowed on #fdf2e9), #767676(lightest grey allowed on white)
 
 3. IMAGES 
     - downloaded from unsplash and for customer faces we are using uifaces website. 
@@ -242,7 +242,7 @@ body {
 /* changing focus on all elements */
 *:focus {
   outline: none;
-  /* trick */
+  /* *trick */
   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 

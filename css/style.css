@@ -486,7 +486,7 @@
 /* ****** */
 
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12.8rem;
 }
 
 .cta {
@@ -575,5 +575,80 @@
 /* ****** */
 
 .footer {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
+
+  /* a subtle distinction between footer and cta section */
+  border-top: 1px solid #eee;
+}
+
+.grid-footer {
+  grid-template-columns: 1.5fr 1.5fr repeat(3, 1fr);
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+
+  /** flexbox trick */
+  /* to make it occupy the remaining space in the flexbox and also align it the end */
+  margin-top: auto;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.contacts {
+  /* as by default the address element are displayed as italic */
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.contacts p {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }
