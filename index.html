@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- without this meta line the responsive web design won't work on mobile devices, tablets , etc. as the page width will not match the screen width without using this meta property-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +14,7 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <title>OmniFood</title>
   </head>
   <body>
@@ -29,6 +32,12 @@
           <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
         </ul>
       </nav>
+
+      <!-- building navigation for mobile layout -->
+      <button class="btn-mobile-nav">
+        <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -37,7 +46,7 @@
       <section class="section-hero">
         <!-- made one more container inside the section-hero container because we need to give the hero container  max-width which will adjust according to its parent container and the section-hero container a background color-->
         <div class="hero">
-          <div class="hero-text">
+          <div class="hero-text-box">
             <h1 class="heading-primary">
               A healthy meal delivered to your door, every single day
             </h1>
@@ -688,5 +697,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -44,6 +44,7 @@ OMNIFOOD DESIGN SETTINGS :
 html {
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -53,6 +54,9 @@ body {
 
   /* our base grey color */
   color: #555;
+
+  /* no horizontal scrollbars - only works if nothing is absolutel positioned to the body*/
+  overflow-x: hidden;
 }
 
 /* ******* */
@@ -229,6 +233,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-icon {
