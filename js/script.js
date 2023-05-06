@@ -50,3 +50,29 @@ year.textContent = currentYear;
 //     }
 //   });
 // });
+
+// STICKY NAVIGATION
+// add sticky class to header as soon as the hero section goes out of the viewport (using intersection observer)
+
+const heroSection = document.querySelector('.section-hero');
+const observer = new IntersectionObserver(
+  (entries) => {
+    const ent = entries[0];
+    if (ent.isIntersecting === false) {
+      document.body.classList.add('sticky');
+    } else {
+      document.body.classList.remove('sticky');
+    }
+  },
+  {
+    // observe the hero section inside the viewport
+    root: null,
+    // event fire as soon as we have 0% of hero section in the viewport(i.e. it moves out completely or comes in completely)
+    threshold: 0,
+    // just 80px above the end of hero section
+    rootMargin: '-80px',
+  }
+);
+
+// observing the hero section
+observer.observe(heroSection);
