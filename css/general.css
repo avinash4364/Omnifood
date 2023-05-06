@@ -48,7 +48,7 @@ html {
 
   /* smooth scrolling when click on the links */
   scroll-behavior: smooth;
-  /* can also be implemented using javascript if the browser doesn't support it by default */
+  /* can also be implemented using javascript if the browser doesn't support it by default as some older version of edge and safari doen't support it. */
 }
 
 body {
