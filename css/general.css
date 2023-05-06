@@ -45,6 +45,10 @@ html {
   /* 62.5% of 16px = 10px */
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* smooth scrolling when click on the links */
+  scroll-behavior: smooth;
+  /* can also be implemented using javascript if the browser doesn't support it by default */
 }
 
 body {
@@ -55,7 +59,7 @@ body {
   /* our base grey color */
   color: #555;
 
-  /* no horizontal scrollbars - only works if nothing is absolutel positioned to the body*/
+  /* no horizontal scrollbars - only works if the element is not absolutely positioned to the body*/
   overflow-x: hidden;
 }
 
