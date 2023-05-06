@@ -8,3 +8,8 @@ function toggleIcon() {
 }
 
 menuButton.addEventListener('click', toggleIcon);
+
+// updating the year to the current year in the copyright
+const year = document.querySelector('.year');
+const currentYear = new Date().getFullYear();
+year.textContent = currentYear;
